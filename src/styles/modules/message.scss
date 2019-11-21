@@ -1,0 +1,64 @@
+.account-container{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    main{
+        flex:1;
+        overflow: scroll;
+        .message-list{
+            .img-circle{
+                border-radius: 50%;
+            }
+            li{
+                width:100%;
+                padding: 5px 5px;
+            }
+            .maoyan{
+                overflow: hidden;
+                span{
+                    padding: 3px 5px;
+                    background: yellowgreen;
+                    color:#fff;
+                    border-radius: 20%;
+                }
+                img{
+                    float:right;
+                }
+                span{
+                    float: right;
+                }
+            }
+            .houtai{
+                overflow: hidden;
+                span{
+                    padding: 3px 5px;
+                    background: rgb(223, 92, 158);
+                    border-radius: 20%;
+                    color:#fff
+                }
+                img{
+                    float:left;
+                }
+                span{
+                    float: left;
+                }
+            }
+        }
+    }
+    footer{
+        height:40px;
+        .btn-send{
+            display: inline-block;
+            width:20%;
+            border:0;
+            height:30px;
+        }
+        .send-content{
+            display: inline-block;
+            width:60%;
+            border:0;
+            height:30px;
+        }
+    }
+}

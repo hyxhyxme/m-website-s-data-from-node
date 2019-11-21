@@ -1,0 +1,26 @@
+{{each list}}
+<div data-id="{{$value.id}}" class="item">
+    <div class="movie-img">
+        <img src="http://localhost:3000/uploads/{{$value.movieLogo}}" alt="">
+    </div>
+    <div class="movie-content">
+        <div class="title">{{$value.movieName}}<span class="version {{$value.version}}"></span></div>
+        
+        <div class="detail-column">
+            <div class="score line-ellipsis"> 
+                <span class="score-suffix">观众评 </span>
+                <span class="grade">{{$value.movieScore}}</span>
+            </div>
+            <div class="actor line-ellipsis">主演:{{$value.movieStar}}</div>
+            <div class="show-info line-ellipsis">{{$value.MovieInfo}}</div>
+        </div>
+    </div>
+    <div class="button-block" data-id="1230121">
+        {{if $value.movieLiving === '是'}}
+            <div class="btn-normal red"><span class="fix" data-bid="dp_wx_home_movie_btn">购票</span></div>
+        {{else}}
+            <div class="btn-normal blue"><span class="fix" data-bid="dp_wx_home_movie_btn">预约</span></div>
+        {{/if}}
+    </div>
+</div>
+{{/each}}

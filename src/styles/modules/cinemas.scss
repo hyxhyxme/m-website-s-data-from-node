@@ -1,0 +1,185 @@
+.cinemas-container{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    color: #777;
+    overflow: hidden;
+    .topbar{
+        display: flex;
+        height: 44px;
+        border-bottom: 1px solid #e6e6e6;
+        align-items: center;
+        justify-content: space-between;
+        .city-entry{
+            padding-left: 15px;
+            font-size: 15px;
+            color: #666;
+            display: flex;
+            align-items: center;
+            .city-name{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 70px;
+                max-width: 19.2vw;
+            }
+            .city-entry-arrow {
+                width: 0;
+                height: 0;
+                border: 4px solid #b0b0b0;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                border-bottom-color: transparent;
+                display: inline-block;
+                margin-left: 4px;
+                margin-top: 5px;
+            }
+        }
+        .search-input{
+            flex:1;
+            display: flex;
+            background-color: #fff;
+            justify-content: center;
+            align-items: center;
+            height: 28px;
+            font-size: 13px;
+            color: #b2b2b2;
+            margin-left: 18px;
+            border: .5px solid #e6e6e6;
+            border-radius: 5px;
+            margin-right: 15px;
+            img {
+                display: block;
+                border: 0;
+                width: 14px;
+                height: 14px;
+                margin-left: 3px;
+                margin-right: 4px;
+            }
+            span{
+                font-size: 13px;
+                color: #b2b2b2;
+            }
+        }
+    }
+    .cinemas-wrap{
+        flex:1;
+        display:flex;
+        flex-direction:column;
+        overflow:hidden;
+        .tab{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            background-color: #fff;
+            .item{
+                flex: 1;
+                text-align: center;
+                line-height: 40px;
+                font-size: 13px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                span{
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    margin-left: 4px;
+                    border: 4px solid transparent;
+                    border-top-color: #b0b0b0;
+                }
+            }
+        }
+        .cinemas-list{
+            flex:1;
+            background-color: #fff;
+            overflow:hidden;
+            .list-content{
+                height:100%;
+                overflow:hidden;  
+                .items{
+                    padding: 13px 15px 13px 0;
+                    margin-left: 15px;
+                    overflow: hidden;
+                    line-height:1.5;
+                    .title{
+                        height: 23px;
+                        line-height: 23px;
+                        font-size: 16px;
+                        color: #000;
+                        @include ellipsis();
+                        .price-block{
+                            color: #f03d37;
+                            .price{
+                                font-size:18px;
+                            }
+                            .q{
+                                font-size:14px;
+                                margin-left:3px;
+                            }
+                        }
+                    }
+                    .location-block{
+                        display:flex;
+                        margin-top: 6px;
+                        font-size: 14px;
+                        color: #666;
+                        .flex{
+                            flex:1;
+                            @include ellipsis();
+                        }
+                        .distance{
+                            margin-left:5px;
+                        }
+                    }
+                    .label-block{
+                        height: 17px;
+                        line-height: 17px;
+                        margin-top: 4px;
+                        margin-bottom: 4px;
+                        overflow: hidden;
+                        font-size: 0;
+                        flex-shrink: 0;
+                        >div{
+                            display: inline-block;
+                            padding: 0 3px;
+                            height: 15px;
+                            line-height: 15px;
+                            border-radius: 2px;
+                            font-size: .06rem;
+                            margin-right:5px;
+                        }
+                        .allowRefund, .endorse{
+                            color: #589daf;
+                            border: 1px solid #589daf;
+                        }
+                        .snack, .vipTag{
+                            color: #f90;
+                            border: 1px solid #f90;
+                        }
+                    }
+                    .discount-block{
+                        color: #999;
+                        margin-bottom: 4px;
+                        .normal{
+                            display: inline-block;
+                            width: 15px;
+                            height: 14px;
+                            margin-top:3px;
+                            img{
+                                width: 15px;
+                                height: 14px;
+                            }
+                        }
+                        .discount-label-text{
+                            display: inline-block;
+                            margin-left: 0;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

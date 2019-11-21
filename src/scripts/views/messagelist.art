@@ -1,0 +1,13 @@
+{{each messagelist}}
+{{if $value.maoyan}}
+    <li class="maoyan">
+        <img class="img-circle" src="../../assets/images/fr-02.jpg" width="32">
+        <span> {{$value.maoyan}}</span>
+    </li>
+{{else}}
+<li class="houtai">
+    <img class="img-circle" src="../../assets/images/fr-05.jpg" width="32">
+    <span>{{$value.houtai}}</span>
+</li>
+{{/if}}
+{{/each}}

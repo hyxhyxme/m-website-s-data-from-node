@@ -1,0 +1,18 @@
+<div class="account-container">
+    <header class="navbar">
+        <div class="nav-wrap-left">
+            <a class="react-back" href="javascript:history.back()"><i class="text-icon icon-back"></i></a>
+        </div>
+        <h1 class="nav-header">客服小后</h1>
+    </header>
+    <main>
+       
+        <ul class="message-list">
+           
+        </ul>
+    </main>
+    <footer>
+        <input type="text" class="send-content" name="" id="">
+        <input class="btn-send" type="button" value="发送">
+    </footer>
+</div>

@@ -1,0 +1,37 @@
+<div class="search-container">
+    <div class="bs">
+        <header class="navbar">
+            <div class="nav-wrap-left">
+                <a class="react-back" href="javascript:history.back()"><i class="text-icon icon-back"></i></a>
+            </div>
+            <h1 class="nav-header">猫眼电影</h1>
+        </header>
+        <div class="search-wrapper" data-search-type="movie">
+            <div class="search-header">
+                <div class="input-wrapper">
+                    <img class="search-icon" src="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/search.png" alt="">
+                    <input class="search-input" type="text" placeholder="搜电影、搜影院">
+                    <img class="del-input" style="display:none" src="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/close.png" alt="">
+                </div>
+                <div class="cancel"><a href="javascript:history.back()">取消</a></div>
+            </div>
+            <div class="search-history">
+                <div class="history-item" data-index="0">
+                    <span class="history-icon"></span>
+                    <span class="word one-line">的</span>
+                    <div class="del-word"></div>
+                </div>
+                <div class="history-item" data-index="1">
+                    <span class="history-icon"></span>
+                    <span class="word one-line">我和我的祖国</span>
+                    <div class="del-word"></div>
+                </div>
+            </div>
+            <div class="search-result" style="display:none">
+                <div class="result-wrapper">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

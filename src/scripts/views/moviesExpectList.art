@@ -1,0 +1,17 @@
+
+    <div>
+        {{each list}}
+        <div class="expected-item">
+            <div class="poster default-img-bg">
+                <img src="{{$value.img}}" onerror="this.style.visibility='hidden'">
+                <span class="wish-bg"></span>
+                <span class="wish"><span class="wish-num">{{$value.wish}}</span> 人想看</span>
+                <div class="toggle-wish" data-wishst="0" data-movieid="1249366">
+                    <span></span>
+                </div>
+            </div>
+            <h5 class="name line-ellipsis">{{$value.nm}}</h5>
+            <p class="date">{{$value.comingTitle}}</p>
+        </div>
+      {{/each}}
+    </div>

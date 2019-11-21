@@ -1,0 +1,75 @@
+<div class="account-container">
+    <header class="navbar">
+        <div class="nav-wrap-left">
+            <a class="react-back" href="javascript:history.back()"><i class="text-icon icon-back"></i></a>
+        </div>
+        <h1 class="nav-header">猫眼电影</h1>
+    </header>
+    <div id="login">
+        <dl class="list">
+            <dd class="nav">
+                <ul class="isleft" data-com="isleft">
+                    <li class="active" tab-target="normal-login-form" gaevent="imt/login/tab/normal"><a class="react">美团账号登录</a></li>
+                    <li tab-target="quick-login-form" gaevent="imt/login/quickBuy/"><a class="react">手机验证登录</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <form id="normal-login-form" action="//i.meituan.com/account/login2" autocomplete="off" method="post" style="display:block">
+            <dl class="list list-in">
+                <dd class="visibale">
+                    <dl>
+                        <dd class="dd-padding kv-line-r">
+                            <input id="username" class="input-weak J-login-name J-input J-account" type="text" placeholder="账户名/手机号/Email" name="email" value="" required="">
+                        </dd>
+                        <dd class="dd-padding kv-line-r">
+                            <input id="password" class="input-weak J-input" type="password" placeholder="请输入您的密码" name="password" required="">
+                        </dd>
+                    </dl>
+                </dd>
+            </dl>
+
+            <div class="btn-wrapper">
+                <button type="submit" gaevent="imt/login/normal" class="btn btn-normal btn-block disabled mj_login login-btn">登录</button>
+            </div>
+            <ul class="subline">
+                    <li><a href="//i.meituan.com/account/signup">立即注册</a></li>
+                    <li class="pull-right"><a href="https://passport.meituan.com/useraccount/retrievepassword">找回密码</a></li>
+            </ul>
+        </form>
+        <form id="quick-login-form" action="https://i.meituan.com/account/mobilelogin2" autocomplete="off" method="post" style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1); display: none;">
+            <dl class="list list-in"><dd class="visibale"><dl>
+                <dd class="kv-line-r dd-padding" data-com="smsBtn_quick" data-requrl="/account/custom/mobilelogincode2">
+                    <img class="login-icon icon-align" src="https://s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:d5896c44/touch/img/account/login/icon_signin_phone@2x.png">
+                    <input type="tel" name="mobile" id="login-mobile" class="input-weak kv-k J-input J-tel J-login-name" placeholder="请输入手机号" maxlength="11">
+                    <div class="to-del J-to-del-mobile J-to-del" style="display: none"></div>
+                    <button id="smsCode" type="button" class="btn btn-weak kv-v btn-captacha" gaevent="imt/buy/quickBuy/send" disabled="disabled">获取验证码</button>
+                </dd>
+                <ul class="tel-select J-select" style="display: none">
+                </ul>
+                <dd class="kv-line-r dd-padding s">
+                    <img class="login-icon" src="https://s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:d5896c44/touch/img/account/login/icon_phone_check_code@2x.png">
+                    <input class="input-weaks kv-k J_input_sms J-input" name="code" type="tel" pattern="[0-9]+" placeholder="请输入短信验证码" disabled="true">
+                    <div class="to-del J-to-del-code J-to-del" style="display: none"></div>
+                </dd>
+                <dd class="dd-padding regist-tip">
+                    <div class="txt">未注册过的手机将自动注册为美团账户</div>
+                </dd>
+            </dl></dd></dl>
+            <div class="btn-wrapper">
+<button type="submit" gaevent="imt/login/quick" class="btn btn-normal btn-block mj_login login-btn" disabled="disabled">登录</button>
+            </div>
+            <input type="hidden" name="touchEvents">
+            <input type="hidden" name="extraFingerPrint">
+            <div class="unreceived-tip J-not-received">
+                <p>仍未收到验证码？拨打<a href="tel:10109777" class="dial">查询热线</a>快速获取吧（9：00-23：00 提供服务）</p>
+            </div>
+            <input type="hidden" name="action">
+            <input type="hidden" name="request_code">
+            <input type="hidden" name="response_code">
+        </form>
+    </div>
+    <footer>
+        <div class="copyright"><span class="copyright">© 猫眼电影 客服电话：<a data-evt="ft/hotline" href="tel:4006705335">400-670-5335</a></span>
+        </div>
+    </footer>
+</div>

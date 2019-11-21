@@ -1,0 +1,32 @@
+<div class="result">
+    <h3>电影 / 电视剧 / 综艺</h3>
+    <div class="list">
+        {{each list}}
+            <div class="movie cell" data-id="1277939">
+                <img class="poster" src="{{$value.img}}" alt="">
+                <div class="info">
+                    <div class="name-score">
+                        <p class="name">
+                            <span class="one-line">{{$value.nm}}</span>
+                            <span class="version v2d imax"></span>
+                        </p>       
+                        <span class="score">
+                            <span class="num">{{$value.sc}}</span> 分
+                        </span>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-items">
+                            <p class="ename one-line">{{$value.enm}}</p>
+                            <p class="catogary">{{$value.cat}}</p>
+                            <p class="release">{{$value.rt}}</p>
+                        </div>
+                        <div class="buy-btn sale" data-id="1277939">购票</div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+    
+    <div class="more-result" data-target="movies" data-total="384">查看全部 384 部影视剧</div>
+    
+</div>

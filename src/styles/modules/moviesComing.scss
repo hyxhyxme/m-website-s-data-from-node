@@ -1,0 +1,207 @@
+.item-content-coming{
+    height:100%;
+    overflow:scroll;
+    .most-expected{
+        padding: 12px 0 12px 15px;
+        background-color: #fff;
+        margin-bottom: 10px;
+        .title{
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 12px;
+        }
+        .most-expected-list{
+            width:100%;
+            overflow: hidden;
+            white-space: nowrap;
+            div{
+               display: flex;
+                .expected-item{
+                    flex:1;
+                    display: inline-block;
+                    width: 85px;
+                    overflow: hidden;
+                    margin-right: 10px;
+                    .poster{
+                        width: 85px;
+                        height: 115px;
+                        position: relative;
+                        margin-bottom: 6px;
+                        img{
+                            height:100%;
+                        }
+                        .wish-bg{
+                            display: inline-block;
+                            width: 100%;
+                            height: 35px;
+                            position: absolute;
+                            bottom: 0;
+                            background-image: -webkit-linear-gradient(top,rgba(77,77,77,0),#000);
+                            background-image: linear-gradient(-180deg,rgba(77,77,77,0),#000);
+                        }
+                        .wish{
+                            position: absolute;
+                            left: 4px;
+                            bottom: 2px;
+                            color: #faaf00;
+                            font-size: 11px;
+                            font-weight: 600;
+                            .wish-num{
+                                
+                                color: #faaf00;
+                                font-size: 11px;
+                                font-weight: 600;
+                            }
+                        }
+                        .toggle-wish{
+                            width: 28px;
+                            line-height: 28px;
+                            background: rgba(61,63,71,.6);
+                            text-align: center;
+                            border-bottom-right-radius: 10px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            span{
+                                display: inline-block;
+                                width: 10px;
+                                height: 10px;
+                                background-size: 100%;
+                                background-repeat: no-repeat;
+                                background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAoCAYAAACFFRgXAAAABGdBTUEAALGPC/xhBQAAAytJREFUWAnVmLtrFFEUh3cWFAtRE5FEEUREsFAkooUIgl3+CUEU7LVR1LBIMERCLFLZRG1CrFJYpLBQENRGC4n4wBeKRUQ2PlAQX+v3m70z7MzemZ3HZp05cPbce86553w7O7Mzc51KjDQaDYfwDvSAseux69Cv6Ef0LXoHXXAc5y82UqhVJbgLPYhuQTega9DPaB19ht6VpVYDaxUBWYUGewkcQzdbE4LOJabXaHQ76G7OqHWI0RG0v+mJ/XxPdJpaD2xZbcAUX0XiSXS/bUEH3yPil2imL1Chln6RE+huzVPKffJV60frugAwDfoI1tBtrUkpx4vknzVrLmAHU65vTX/F5DzQnzynDwzsCpwX0e1eMIfV+S3ReZpXXlDgFNC/VEgXgifHGXQDVvUE2g1Y1RKT2FxxgTm6cg4bXxHNsGH0j/DhIlKGmFzGKuSbCAyFgkWcDsG6UaeE/m/LIvsEvKcstGIV8ECJgAcErJtFWaRPwCvLQitWAbv3/ZJALwlYj3ZlkbqA9YBRFnkp4HtloRWrgJ+g/uNbgeHF+LTKY5tebWYLDOqhzYpVR1hyE33njor5ITYxNp/WIP/DeBINvI4ooQAipknD6D9eVnC8JjCOxr799vgLiGXcsLmtvVPCnRB4yGDanRTjQ2/PYvIlACwvCTcwM37G/xvMGJYAQRuwoiRex8wFMns7mTMMbV2twMpiwVXMfNuK5XfMm97WTpHAJvsy9pZ15fI41Us9IyUWmG+qPa4ptBe3b/WYMj2zAWsVBfQfPYEGrlbFuiiqPWF6xZaNPcLeSgr9ZjyGLni+LlrVHDM9OpZNBKwqFPyJGUWfa94lUa1RUztRSX9vLVE2SewNrMboaG9NuiYi7w3+M8B+i4hb3amBVQXotRjdxpPsHWtJWLQHfBrYL+FAp3kmYBUFWnu/2u1Mu03wgTXajaxjU0tmYHUCehAj6H7NE4ggBSvoTJL4orNVp/Eifm1eJ/lplXMuD6wYcgGrAAA6H0fQ75pHiGIjJjciJZk7N7DaAKIrvobarnj5aiaHYT7JdQ6HW5sL8Sj+nSb2GHsF2EwXWLi+5v8ArR6xIZ+h44wAAAAASUVORK5CYII=);
+                            }
+                        }
+                    }
+                    .name{
+                        margin: 0;
+                        font-size: 13px;
+                        color: #222;
+                        margin-bottom: 3px;
+                        @include ellipsis();
+                    }
+                    .date{
+                        margin: 0;
+                        font-size: 12px;
+                        color: #999;
+                    }
+                }
+            }
+            }
+    }
+    .coming-list{
+        background-color: #fff;
+        div{
+            .group-date{
+                padding: 24px 15px 0;
+                margin: 0;
+                font-size: 14px;
+                color: #333;
+            }
+            .item{
+                padding-left: 15px;
+                .main-block{
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    .avatar{
+                        width: 64px;
+                        height: 90px;
+                        position: relative;
+                        margin-top: 12px;
+                        
+                        .default-img-bg{
+                            
+                            background-color: #e1e1e1;
+                            background-size: 100% 100%;
+                            img{
+                                display:block;
+                                background-color: transparent;
+                                height: 90px;
+                                width:100%;
+                            }
+                        }
+                    }
+                    .content-wrapper{
+                        flex:1;
+                        padding: 4px 14px 12px 0;
+                        margin-left: 19px;
+                        height: 90px;
+                        max-height: 90px;
+                        position: relative;
+                        overflow: hidden;
+                        .column-content{
+                            padding-right: 5px;
+                            margin-right: 48px;
+                            overflow: hidden;
+                            .movie-title{
+                                max-height: 24px;
+                                margin-bottom: 7px;
+                                line-height: 24px;
+                                overflow: hidden;
+                                display: flex;
+                                .title{
+                                    font-size: 17px;
+                                    color: #333;
+                                    font-weight: 700;
+                                    padding-right: 5px;
+                                    flex-shrink: 1;
+                                    @include ellipsis();
+                                }
+                            }
+                            .detail-column{
+                                line-height: 1;
+                                overflow: hidden;
+                                .wantsee{
+                                    @include ellipsis();
+                                    .person{
+                                        color: #faaf00;
+                                        font-size: 15px;
+                                        font-weight: 600;
+                                    }
+                                    .p-suffix{
+                                        font-size: 13px;
+                                        margin-left: -2px;
+                                        display: inline-block;
+                                        color: #666;
+                                    }
+                                }
+                                .actor{
+                                    @include ellipsis();
+                                    margin-top: 6px;
+                                    line-height: 15px;
+                                }
+                            }
+                        }
+                        .button-block{
+                            font-size: 12px;
+                            position: absolute;
+                            right: 14px;
+                            top: 0;
+                            bottom: 0;
+                            height: 27px;
+                            margin: auto;
+                            .btn{
+                                width: 47px;
+                                height: 27px;
+                                line-height: 28px;
+                                text-align: center;
+                                box-sizing: border-box;
+                                background-color: #f03d37;
+                                color: #fff;
+                                border-radius: 4px;
+                                white-space: nowrap;
+                                font-size: 12px;
+                                cursor: pointer;
+                            }
+                            .pre{
+                                background-color: #3c9fe6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
